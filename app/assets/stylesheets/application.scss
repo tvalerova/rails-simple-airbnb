@@ -12,13 +12,18 @@
 h1{
  margin-left: 16px;
 }
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  margin-top: 16px;
-  margin-left: 16px;
+  margin: 16px;
 }
 
 .card{
@@ -29,19 +34,27 @@ h1{
   // justify-content: space-around;
   // text-shadow: 0 0 10px rgba(0,0,0,0.7);
   padding: 10px 10px;
+  // height: 150px;
+  // width: 150px;
+  min-width: 200px;
+  min-height: 300px;
 }
 
 #price-guests{
   display: flex;
+  position: absolute;
+  bottom: 40px;
 }
 
 .icon{
   padding: 0 10px;
+
 }
 
-#navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+#link{
+  position: absolute;
+    bottom: 0;
+    padding: 10px 0;
 }
+
+
