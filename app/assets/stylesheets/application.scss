@@ -22,8 +22,8 @@ h1{
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  margin: 16px;
+  grid-gap: 30px;
+  margin: 30px;
 }
 
 .card{
@@ -57,4 +57,30 @@ h1{
     padding: 10px 0;
 }
 
+.btn{
+  border-radius: 5px;
+}
 
+@media(min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+.cards {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 575px) and (min-width: 100px) {
+  .cards {
+    grid-template-columns: 1fr;
+}
+}
